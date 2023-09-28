@@ -12,4 +12,27 @@ b) Replace any strings with “ARRR!”
 c) Print the new array to confirm your work.
 */
 
-let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+
+
+let nums = [1, 2, "apple", 3, "first", 4, 5];
+
+let triple = nums.map(function (n) {
+    if (typeof n === "number") {
+        return n*3;
+    }
+});
+console.log(triple);
+
+let myArr = ['Elocution', 21, 'Clean teeth', 100];
+let practice = myArr.map(function(n) {
+    if (typeof n === "number") {
+       return n * 3;
+    } else if(typeof n === "string") {
+    return "ARRR";
+ } else {
+    return n;
+ }
+});
+
+console.log(practice);
